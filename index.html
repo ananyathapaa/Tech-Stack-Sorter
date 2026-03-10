@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Stack Sorter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Tech Stack Sorter</h1>
+    <p class="subtitle">
+      Drag the technology to its correct architectural layer.
+    </p>
+
+    <div class="game-container">
+      <div id="inventory-container">
+        <div class="zone-header">Inventory</div>
+        <div id="inventory-list"></div>
+      </div>
+
+      <div class="drop-zone" data-category="frontend">
+        <div class="zone-header">Frontend</div>
+        <div class="zone-content"></div>
+      </div>
+
+      <div class="drop-zone" data-category="backend">
+        <div class="zone-header">Backend</div>
+        <div class="zone-content"></div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="error-modal">
+      <div class="modal-card">
+        <div id="modal-message"></div>
+        <button class="modal-btn" id="modal-close">Got it</button>
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
